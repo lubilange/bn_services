@@ -32,6 +32,9 @@ section{
 	min-height: 100vh;
 	padding: 10rem 11% 2rem;
 }
+.me{
+	border-radius: 80%;
+}
 .header{
     position: fixed;
     top: 0;
