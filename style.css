@@ -223,125 +223,11 @@ span{
 	font-size: 1.6rem;
 	margin: 1rem 0 3rem;
 }
-.portfolio{
-	background: var(--snd-bg-color);
-}
-.portfolio h2{
-	margin-bottom: 4rem;
-}
-.portfolio-container{
-	display: grid;
-	grid-template-columns: repeat(2,2fr);
-	align-items: center;
-	gap: 2.5rem;
-}
-.portfolio-container .portfolio-box{
-	position: relative;
-	border-radius: 2rem;
-	display: flex;
-	box-shadow: 0 0 1rem rgb(186, 186, 174);
-	overflow: hidden;
-}
-
-
-.portfolio-box img{
-	width: 100%;
-	transition:.5s ease;
-	opacity: 0.9;
-}
-
-.portfolio-box:hover img{
-	transform: scale(1.1);
-}
-
-.portfolio-box .portfolio-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  transform: translateY(100%);
-  padding: 0 2rem;
-  transition: .5s ease;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-  color: #fff; /* texte blanc pour le contraste */
-}
-
-.portfolio-box:hover .portfolio-layer{
-	transform: translateY(0);
-}
-.portfolio-layer h4{
-	font-size: 3rem;
-}
-.portfolio-layer p{
-	font-size: 1.6rem;
-	margin: .3rem 0 1rem;
-}
 /**/
 .contact{
 	background: var(--snd-bg-color);
 }
-.Activities h2{
-	margin-bottom: 4rem;
-}
-.Activities-container{
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	align-items: center;
-	gap: 2.5rem;
-}
-.Activities-container .Activities-box{
-	position: relative;
-	border-radius: 2rem;
-	display: flex;
-	box-shadow: 0 0 1rem rgb(186, 186, 174);
-	overflow: hidden;
-}
 
-
-.Activities-box img{
-	width: 100%;
-	transition:.5s ease;
-	opacity: 0.9;
-}
-
-.Activities-box:hover img{
-	transform: scale(1.1);
-}
-
-.Activities-box .Activities-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  transform: translateY(100%);
-  padding: 0 2rem;
-  transition: .5s ease;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-  color: #fff; 
-}
-
-.Activities-box:hover .Activities-layer{
-	transform: translateY(0);
-}
-.Activities-layer h4{
-	font-size: 3rem;
-}
-.Activities-layer p{
-	font-size: 1.6rem;
-	margin: .3rem 0 1rem;
-}
 .contact h2 {
   margin-bottom: 3rem;
   text-align: center;
@@ -464,8 +350,6 @@ span{
 		padding: 10rem 3%;
 	}
 	.services{padding: 7rem;}
-	.portfolio{ padding-bottom: 7rem;}
-	.Activities{ padding-bottom: 7rem;}
 	.footer{
 		padding: 2rem 3%;
 	}
@@ -474,7 +358,6 @@ span{
 }
 
 @media (max-width:768px){
-	#menu-icon{ display: block;}
 	.home{
 		flex-direction: column;
 	}.home-content h1{ font-size: 5rem;}
@@ -511,25 +394,11 @@ span{
 	.services h2{
 		margin-bottom: 3rem;
 	}
-	.portfolio h2{
-		margin-bottom: 3rem;
-	}
-	.portfolio-container{
-		grid-template-columns:repeat(2,1fr);
-	}
-	.Activities h2{
-		margin-bottom: 3rem;
-	}
-	.Activities-container{
-		grid-template-columns:repeat(2,1fr);
-	}
+	
 }
 
 @media(max-width:617px)  {
 	.portfolio-container{
-		grid-template-columns: 1fr;
-	}
-	.Activities-container{
 		grid-template-columns: 1fr;
 	}
 	.home-img img{
