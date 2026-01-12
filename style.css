@@ -322,7 +322,7 @@ span{
 		justify-content: center;
 		align-items: center;
 		padding: .8rem 1rem;
-		background-color: rgb(198, 179, 110);
+		background-color: black;
 		border-radius: .8rem;
 		transition: .5s ease;
 		position: fixed; 
