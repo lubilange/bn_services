@@ -65,7 +65,7 @@
     <h2 class="heading">Nos <span>Services</span></h2>
     <div class="skills-container">
       <div class="skills-box">
-        <img src="sacbraise.jpeg" />
+        <img src="sacbraise.jpeg" class="skill-img" />
         <h3>Vente de Sacs à Braises</h3>
         <p>Des sacs de qualité pour des barbecues réussis et une expérience culinaire optimale.</p>
       </div>
@@ -76,7 +76,7 @@
         <p>Fruits frais et naturels pour revendeurs et entreprises.</p>
       </div>
       <div class="skills-box">
-        <img src="transac.jpeg" />
+        <img src="traansac.jpeg" class="skill-img" />
         <h3>Services de Transactions</h3>
         <p>Transferts rapides et sécurisés via M-Pesa, Airtel Money, Orange Money,Western Union, Illico Cash et Afri Money.</p>
       </div>
@@ -102,24 +102,32 @@
   <h2 class="heading">Contactez- <span>NOUS</span></h2>
   <div class="contact-container">
     
-    <form class="messageForm" id="contact_form" onsubmit="sendMail(event)">
-      <div class="input-box">
-        <label for="name">Nom</label>
-        <input type="text" id="name" placeholder="Entrez votre nom" required />
-      </div>
+  <form class="messageForm">
 
-      <div class="input-box">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="exemple@gmail.com" required />
-      </div>
+  <div class="input-box">
+    <label>Choisissez comment nous contacter :</label>
+  </div>
 
-      <div class="input-box">
-        <label for="message">Message ↓↓</label>
-        <textarea id="message" rows="5" placeholder="Dites quelque chose..." required></textarea>
-      </div>
+  <!-- EMAIL -->
+  <a href="mailto:benilubila0@gmail.com?subject=Contact&body=Bonjour, je souhaite vous contacter."
+     class="contact-btn email-btn">
 
-      <button class="send" type="submit">Send</button>
-    </form>
+     <i class="fa-solid fa-envelope"></i>
+     Nous contacter par Email
+
+  </a>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/243997566224?text=Bonjour%20je%20souhaite%20vous%20contacter"
+     target="_blank"
+     class="contact-btn whatsapp-btn">
+
+     <i class="fa-brands fa-whatsapp"></i>
+     Nous contacter sur WhatsApp
+
+  </a>
+
+</form>
 
     <div class="contact-image">
       <img src="https://img.freepik.com/free-vector/contact-us-concept-landing-page_52683-12860.jpg" alt="Contact illustration" />
@@ -144,7 +152,6 @@
       <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
     </div>
   </footer>
-  <script src="mail.js"></script>
 	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="effet.js"></script>
