@@ -254,8 +254,14 @@ span{
 
 .contact form {
   flex: 1 1 40rem;
-  max-width: 100%;
-  text-align: left;
+  max-width: 500px;
+  width:100%;
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:2rem;
 }
 
 .contact form .input-box {
